@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #404040;
+}
+
+.container{
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.container div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container div input{
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    background-color: #E7E9EB;
+    outline: none;
+    font-size: 14px;
+}
+
+.container div label{
+    text-align: right;
+    margin: 10px;
+    padding: 10px;
+    border-right: 2px solid black;
+}
+
+.selectOptions{
+    margin-bottom: 10px;
+}
+
+.selectOptions label{
+    margin: 0px 10px !important;
+}
+
+.selectOptions select{
+    margin: 0px 10px;
+    font-size: 13px;
+}
+
+.exFormat{
+    margin: 0px 10px;
+    opacity: 0.5;
+    line-height: 16px;
+}
+
+button#cancel {
+    border: none;
+    padding: 10px;
+    margin: 0px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 20px;
+    background-color: #00a0e3d6;
+    transition: 0.4s all;
+}
+
+button#cancel:hover{
+    background-color: #0688c0;
+}
+
+button#create{
+    border: none;
+    padding: 10px;
+    margin: 0px 10px;
+    margin-top: 20px;
+    width: 50%;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 47%;
+    background-color: #00a0e3d6;
+    transition: 0.4s all;
+}
+
+button#create:hover{
+    background-color: #0688c0;
+}

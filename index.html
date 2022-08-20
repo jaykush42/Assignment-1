@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Assignment1</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="index.html">
+        <div class="selectOptions">
+          <label for="sourceName">Select your Source :</label>
+          <select id="sourceName" required>
+            <option value="">Select...</option>
+            <option value="GCS" selected>Google Cloud Storage</option>
+          </select>
+        </div>
+        <div>
+          <label for="pipelineName">Provide a name for pipeline :</label>
+          <input
+            type="text"
+            id="pipelineName"
+            placeholder="e.g., cust_shop_energy_gkateway001"
+            required
+          />
+        </div>
+        <div>
+          <label for="projectName">GCS project name :</label>
+          <input
+            type="text"
+            id="projectName"
+            placeholder="project-id"
+            required
+          />
+        </div>
+        <div>
+          <label for="bucketName">GCS bucket name :</label>
+          <input
+            type="text"
+            id="bucketName"
+            placeholder="gs://your-bucket"
+            required
+          />
+        </div>
+        <div>
+          <label for="fileLocation">Input Cloud Storage File(s) :</label>
+          <input
+            type="text"
+            id="fileLocation"
+            placeholder="GCS location of your files"
+            required
+          />
+        </div>
+        <div style="margin: -8px">
+          <div></div>
+          <p class="exFormat">
+            Example:<br />gs://your-bucket/your-files/01.csv
+          </p>
+        </div>
+        <div>
+          <label for="credentials">GCS credentials :</label>
+          <input type="text" id="credentials" required />
+        </div>
+        <div>
+          <label for="runTime">Run Every :</label>
+          <input
+            type="number"
+            id="runTime"
+            placeholder="(in minutes)"
+            min="0"
+            required
+          />
+        </div>
+        <div>
+          <button type="submit" id="create" onclick="formValidation()">
+            Create
+          </button>
+          <button id="cancel" onclick="reset()">Cancel</button>
+        </div>
+      </form>
+    </div>
+   <script src="javascript.js"></script>
+  </body>
+</html>
